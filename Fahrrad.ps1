@@ -1,4 +1,12 @@
-#steam-privesc, credits go to Vasily Kravets @ https://amonitoring.ru/article/steamclient-0day/
+#Fahrrad.ps1
+
+# This is a privilege escalation exploit for the Steam Client. Uses registry symlinks. Check it out at https://github.com/alexanderbittner/steam-privesc/ .
+# 
+# This program is only intended for research purposes.
+# USE AT YOUR OWN RISK and please don't break anyone's system.
+#
+# PoC that was useful for developing this: https://gist.github.com/enigma0x3/03f065be011c5980b96855e2741bf302
+# credits go to Vasily Kravets @ https://amonitoring.ru/article/steamclient-0day/
 
 import-module NTObjectManager
 Write-Host "Deleting reg key HKLM:\SOFTWARE\WOW6432Node\Valve\Steam\NSIS"
